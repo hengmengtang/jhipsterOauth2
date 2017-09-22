@@ -1,0 +1,11 @@
+version: '2'
+services:
+    jhipsteroauth2-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/jhipsterOauth2/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=jhipsterOauth2
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
